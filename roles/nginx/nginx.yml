@@ -1,0 +1,16 @@
+---
+- hosts: nginx:tag_AnsibleGroup_nginx
+  name: Install  Nginx
+  connection: local
+  gather_facts: True 
+
+  remote_user: root
+  become: yes
+  # remote_user: user
+  # sudo: yes
+
+  roles:
+    - common
+    - nginx
+
+
