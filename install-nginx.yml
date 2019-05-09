@@ -2,7 +2,7 @@
 #About: This will install Nginx
 #
 ---
-- hosts: '{{inventory}}'
+- hosts: localhost
   become: yes
   roles:
   - nginx
