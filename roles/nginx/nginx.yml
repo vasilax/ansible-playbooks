@@ -1,5 +1,5 @@
 ---
-- hosts: nginx:tag_AnsibleGroup_nginx
+- hosts: localhost
   name: Install  Nginx
   connection: local
   gather_facts: True 
